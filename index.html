@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Tes Personality</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+
+</head>
+
+<body>
+
+<div class="background"></div>
+
+<div class="container">
+
+<h1>Tes Personality</h1>
+<p>Analisis psikologi yang dikembangkan oleh Agus Satria Adhitama</p>
+
+<div id="start">
+
+<input id="username" placeholder="Masukkan nama kamu">
+
+<button onclick="startTest()">Mulai Tes</button>
+
+</div>
+
+<div id="quiz" class="hidden">
+
+<h2 id="question"></h2>
+
+<div id="answers"></div>
+
+<div class="progress-container">
+<div id="progress"></div>
+</div>
+
+</div>
+
+<div id="scanPage" class="hidden">
+
+<h2>sedang menganalisis pola psikologi...</h2>
+
+<div class="scan"></div>
+
+<div class="progress-container">
+<div id="analysisProgress"></div>
+</div>
+
+</div>
+
+<div id="resultPage" class="hidden">
+
+<h2>Hasil Analisis</h2>
+
+<div id="resultGrid" class="result-grid"></div>
+
+<div id="summary" class="summary"></div>
+
+<h3>Lokasi Terdeteksi</h3>
+
+<div id="map"></div>
+
+<p id="location"></p>
+
+<button onclick="shareResult()">Share Hasil</button>
+
+</div>
+
+<footer>
+by Agus Satria Adhitama
+</footer>
+
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<script src="js/questions.js"></script>
+<script src="js/personality.js"></script>
+<script src="js/ip.js"></script>
+<script src="js/map.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>
