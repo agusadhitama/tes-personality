@@ -42,19 +42,6 @@ Tes seperti ini sering digunakan untuk membantu seseorang **lebih memahami dirin
 
 ---
 
-## 📂 Struktur Project
-
-```
-tes-personality/
-│
-├── index.html
-├── style.css
-├── script.js
-└── README.md
-```
-
----
-
 ## ⚙️ Cara Menjalankan Project
 
 Clone repository:
